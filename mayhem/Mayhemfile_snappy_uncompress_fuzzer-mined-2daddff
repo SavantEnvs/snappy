@@ -1,0 +1,9 @@
+project: savantenvs/snappy
+target: snappy_uncompress_fuzzer-mined-2daddff
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/snappy_uncompress_fuzzer-mined-2daddff/testsuite
+cmds:
+  - cmd: /mayhem/snappy_uncompress_fuzzer
+    libfuzzer: true
+    timeout: 5
